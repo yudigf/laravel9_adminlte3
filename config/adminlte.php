@@ -305,7 +305,7 @@ return [
        
         [
             'text' => 'Dashboard',
-            'url'  => 'home',
+            'route'  => 'dashboard',
             'icon'  => 'fas fa-fw fa-home',
         ],
         [
@@ -318,11 +318,14 @@ return [
                 ],
                 [
                     'text' => 'Roles',
-                    'url'  => 'roles',
+                    'route'  => 'users.roles.index',
+                    'active' => ['users/roles/*'],
+
                 ],
                 [
                     'text' => 'Permissions',
-                    'url'  => 'permissions',
+                    'route'  => 'users.permissions.index',
+                    'active' => ['users/permissions/*'],
                 ],
             ]
         ],
